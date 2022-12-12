@@ -1,0 +1,103 @@
+.welcomeM{
+    background-color: #e7e7e7;
+    height: 100vh;
+    margin: 0 300px;
+    padding: 10px;
+    float:left;
+}
+.loginMenu {
+    background-color: #e7e7e7;
+    height: 500px;
+    margin: 0 80px;
+    padding: 10px;
+
+    float: left;
+    margin-top: 100px;
+}
+
+.registerPage{
+    background-color: #c9dac9;
+    height:  87vh;
+    padding: 100px;
+    float:left;
+
+}
+.blank{
+    margin-top: 100px; 
+
+}
+
+
+.welcome{
+    font-weight: bold;
+    font-size: 90px;
+    color: #4b4b4b;
+
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 450px;
+    border-bottom:5px solid #4b4b4b;
+
+}
+
+.image1 {
+    max-width: 450px;
+
+}
+
+.inputTitle{
+    font-size : 15px;
+    font-weight:600;
+    color:#000000;
+    margin-top: 26px;
+
+}
+
+.input {    /* 정보 입력칸 */
+    display: flex;
+    border-radius: 3px;
+    width : 300px;
+    padding: 16px;
+    margin-top: 8px;
+    background-color : white;
+    border: 1px solid #e2e0e0;
+  
+}
+.input::placeholder{ 
+    color: #dadada;
+}
+
+
+
+.bottomButton{
+    width: 100%;
+    height: 48px;
+    border: none;
+    /* font-weight: 700; */
+    background-color: #46ad65;
+    /* border-radius: 64px; */
+    color:white;
+    margin-bottom: 16px;
+    cursor: pointer;
+    margin-top: 26px;
+    
+    }
+      
+
+.genderPick{
+    margin-top: 16px;
+}
+      
+
+.tutorialPage{
+    background-color: #e7e7e7;
+    height: 100vh;
+    /* margin: 0px; */
+    /* padding: 1000px; */
+    width: 1000px;
+    float:left;
+
+}
