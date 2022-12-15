@@ -1,0 +1,42 @@
+1. 설치해야하는 패키지
+
+npm install three
+npm install @react-three/fiber
+npm install @react-three/drei
+
+2. models 파일
+public 폴더 내에 넣어주시면 됩니다.
+집 모델이 glb형식으로 들어있습니다.
+
+3. App.js
+함수형 컴포넌트
+GLTFMODEL 컴포넌트: gltf 파일을 로드
+OBJMODEL 컴포넌트: obj파일과 mtl파일을 로드. 지워도 됨.
+Loader 컴포넌트: 3d파일 로딩 화면 (크기가 큰 파일은 로딩이 오래걸릴 수 있음)
+
+App() 내부
+
+      <div className="canvas-container">	// 캔버스를 담고있는 div박스
+
+        <Canvas>					// 3d화면 캔버스
+          <Suspense fallback={<Loader />}>	
+            <ambientLight />				// 조명
+            <GLTFMODEL />				// 모델
+            <OrbitControls enablePan={true}  enableZoom={true} enableRotate={true}/>	// 마우스 조작 기능
+            <Environment preset="warehouse" background />					// 배경. 지우면 배경이 사라지고 어두워 질 수도 있음.
+          </Suspense>
+        </Canvas>
+
+      </div>    
+
+
+4. index.css
+3d 모델이 그려질 캔버스를 감싸는 div의 스타일이 저장되어있습니다.
+
+.canvas-container {
+  width: 1000px;
+  height: 1000px;
+  background:white;
+  border-radius: 0px;
+  margin-bottom:20px
+}
